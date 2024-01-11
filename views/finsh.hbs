@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maktabtoko</title>
+    <meta name="description"
+        content="احصل الآن علي أفضل الخدمات البحثية التي تساندك في مشوارك العلمي من توفير مراجع ودراسات سابقة وإعداد الإطار النظري بأفضل سعر وبأعلى جودة. تجعلك تتغلب علي العديد من الصعوبات والعوائق التي تتعرض إليها في مسيرتك العلمية.">
+    <meta name="keywords"
+        content="مكتبتك،مكتبتكو، مكتبة،ادوات دراسية، دراسة الماجستير، دكتوراه، دراسات سابقة اجنبية، دراسات اجنبية مترجمة، مواقع دراسات أجنبية، الدراسات السابقة في البحث العلمي، موقع للدراسات السابقة، موقع رسائل ماجستير، موقع أبحاث ورسائل ماجستير، مواقع أبحاث علمية اجنبية، الإطار النظري، ترجمة">
+    <meta name="author" content="CodeCome">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    <style>
+        .home {
+            position: absolute;
+            left: 45%;
+            top: 10rem;
+        }
+
+        .loading {
+            width: 124px;
+            height: 124px;
+        }
+
+        .loading svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .circle {
+            transform: rotate(-90deg);
+            transform-origin: center;
+            stroke-dasharray: 380;
+            stroke-dashoffset: 380;
+            animation: circle_4 2s ease-in-out forwards;
+        }
+
+        .check {
+            stroke-dasharray: 45;
+            stroke-dashoffset: 45;
+            animation: check_4 0.2s 2s ease-in-out forwards;
+        }
+
+        @keyframes circle_4 {
+            0% {
+                stroke-dashoffset: 380;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes check_4 {
+            0% {
+                stroke-dashoffset: 45;
+            }
+
+            100% {
+                stroke-dashoffset: 90;
+            }
+        }
+
+        .btn_main {
+            width: 100%;
+            float: left;
+            padding-top: 40px;
+            margin-left: 20px;
+        }
+
+        .text_done {
+            margin-left: -50px;
+            margin-top: 15px;
+        }
+
+        .footer_section {
+            width: 100%;
+            float: left;
+            background-color: #202020;
+            height: auto;
+            margin-top: 30rem;
+            padding-bottom: 90px;
+        }
+
+        .mail_section {
+            width: 100%;
+            float: left;
+        }
+
+        .email_text {
+            width: 65%;
+            float: right;
+            font-size: 18px;
+            color: #363636;
+            background-color: #ffffff !important;
+            border: 0px;
+            padding: 16px 20px 10px 30px;
+            height: auto;
+            border-radius: 40px;
+        }
+
+
+        .subscribe_bt {
+            width: 350px;
+            float: left;
+        }
+
+        .subscribe_bt a {
+            width: 100%;
+            float: left;
+            font-size: 20px;
+            color: #151515;
+            text-align: center;
+            background-color: #fcce2d;
+            padding: 10px 0px;
+            text-transform: uppercase;
+            border-radius: 40px;
+        }
+
+        .subscribe_bt a:hover {
+            color: #000;
+            background-color: #ffffff;
+        }
+
+
+        .margin_top {
+            margin-top: 90px;
+        }
+
+        .call_text {
+            width: 100%;
+            float: left;
+            font-size: 16px;
+            color: #ffffff;
+            padding-top: 20px;
+        }
+
+        .call_text a {
+            color: #ffffff;
+        }
+
+        .call_text a:hover {
+            color: #fcce2d;
+        }
+
+
+        .footer_section_2 {
+            width: 100%;
+            float: left;
+            margin-top: 100px;
+        }
+
+        .footer_logo {
+            width: 100%;
+            float: left;
+            color: white;
+            font-size: 35px;
+            padding: 124px 0px;
+        }
+
+        .footer_menu {
+            width: 100%;
+            float: left;
+        }
+
+        .footer_menu ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .footer_menu li {
+            font-size: 16px;
+            color: #ffffff;
+            padding: 12px 0px;
+        }
+
+        .footer_menu li a {
+            color: #ffffff;
+        }
+
+        .footer_menu li a:hover {
+            color: #fcce2d;
+        }
+
+        .information_text {
+            width: 100%;
+            float: left;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .many_text {
+            width: 87%;
+            float: left;
+            font-size: 16px;
+            color: #fff;
+            margin-left: 0px;
+            line-height: 40px;
+            margin-top: 0px;
+        }
+
+        .information_main {
+            width: 100%;
+            float: left;
+            /* border-left: 1px solid #ffffff; */
+            padding-left: 50px;
+            filter: drop-shadow(0px 0px 1px #8bb9d1);
+        }
+
+
+        /* footer section end */
+
+
+        .copyright_section {
+            width: 100%;
+            float: left;
+            background-color: #f7f6f6;
+            height: auto;
+        }
+
+        .copyright_text {
+            width: 100%;
+            float: left;
+            font-size: 16px;
+            margin-left: 0px;
+            color: #131313;
+            text-align: center;
+        }
+
+        .copyright_text a {
+            color: #131313;
+        }
+
+        .copyright_text a:hover {
+            color: #fcce2d;
+        }
+
+        .margin_top_90 {
+            margin-top: 90px;
+        }
+
+        @media (max-width:500px) {
+            .home {
+                position: absolute;
+                left: 35%;
+                top: 10rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    {{!-- nav --}}
+    <nav class="navbar navbar-dark  fixed-top header" style=" background-color: #212529;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-start" href="#" style="  color: #ffc107;">مكتبتكو</a>
+        </div>
+    </nav>
+    {{!-- Done --}}
+    <section class="home">
+        <div class="loading">
+            <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 124 124">
+                <circle class="circle-loading" cx="62" cy="62" r="59" fill="none" stroke="hsl(271, 76%, 74%)"
+                    stroke-width="6px"></circle>
+                <circle class="circle" cx="62" cy="62" r="59" fill="none" stroke="hsl(271, 76%, 53%)" stroke-width="6px"
+                    stroke-linecap="round"></circle>
+                <polyline class="check" points="73.56 48.63 57.88 72.69 49.38 62" fill="none"
+                    stroke="hsl(271, 76%, 53%)" stroke-width="6px" stroke-linecap="round"></polyline>
+            </svg>
+        </div>
+        <div class="text_done">
+            <h2>تمت العملية بنجاح</h2>
+        </div>
+        {{!-- back --}}
+        <div class="btn_main">
+
+            <button onclick="goBack()" class="btn btn-dark">Go Back</button>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="text-center ">
+                <div style="padding: 30px;background-color: #FDFEFE;border-radius: 20px;"></div>
+            </div>
+            <div class="footer_section_2">
+                <div class="row">
+                    <div class="col-lg-3 margin_top">
+                        <div class="call_text"><a href="#"><img src="/images/call-icon1.png"><span
+                                    class="padding_left_15">Call Now
+                                    +201064214425</span></a></div>
+                        <div class="call_text"><a href="#"><img src="/images/mail-icon1.png"><span
+                                    class="padding_left_15">maktabtoko@gmail.com</span></a></div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="information_main">
+                            <h4 class="information_text">social media</h4>
+                            <p class="many_text">
+                                Facebook
+                                <br>
+                                Twitter
+                                <br>
+                                LinkedIn
+                                <br>
+                                Instgram
+                                <br>
+                                Youtube
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="information_main">
+                            <h4 class="information_text">Our Services</h4>
+                            <p class="many_text">
+                                Study office services
+                                <br>
+                                educational services
+                                <br>
+                                commercial services
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="information_main">
+                            <h4 class="information_text">Quick Linkes</h4>
+                            <p class="many_text">
+                                <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
+                                <br>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">Login</a>
+                                <br>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">Register</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <p class="copyright_text">© 2024 All Rights Reserved. <a
+                    href="https://www.facebook.com/profile.php?id=100078522217484" target="_blank">CodeCome</a></p>
+        </div>
+    </div>
+    <!-- copyright section end -->
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Maktabtoko</title>
+    <meta name="description"
+        content="احصل الآن علي أفضل الخدمات البحثية التي تساندك في مشوارك العلمي من توفير مراجع ودراسات سابقة وإعداد الإطار النظري بأفضل سعر وبأعلى جودة. تجعلك تتغلب علي العديد من الصعوبات والعوائق التي تتعرض إليها في مسيرتك العلمية.">
+    <meta name="keywords"
+        content="مكتبتك،مكتبتكو، مكتبة،ادوات دراسية، دراسة الماجستير، دكتوراه، دراسات سابقة اجنبية، دراسات اجنبية مترجمة، مواقع دراسات أجنبية، الدراسات السابقة في البحث العلمي، موقع للدراسات السابقة، موقع رسائل ماجستير، موقع أبحاث ورسائل ماجستير، مواقع أبحاث علمية اجنبية، الإطار النظري، ترجمة">
+    <meta name="author" content="CodeCome">
+    <!-- owl carousel style -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="/stylesheets/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="/images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="/stylesheets/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap"
+        rel="stylesheet">
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="/stylesheets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/stylesheets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        .overscrol {
+            width: auto;
+            white-space: nowrap;
+            overflow: scroll;
+            height: 500px;
+        }
+
+        .overscrol::-webkit-scrollbar {
+            width: 2px;
+
+        }
+
+        .overscrol::-webkit-scrollbar-thumb {
+
+            border-radius: 10px;
+            background-color: #d4af37;
+            /* Set thumb color for Chrome and Safari */
+        }
+
+        .overscrol::-webkit-scrollbar-track {
+            width: 2px;
+            background-color: rgba(0, 128, 0, 0);
+            /* Set track color for Chrome and Safari */
+        }
+
+        .card {
+            margin-left: -1rem;
+            margin-right: -1rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            margin-bottom: 2rem;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0.25rem;
+            background-color: rgba(208, 210, 214, 0.13);
+            padding: 1.5rem;
+            box-shadow: 0px 0px 10px #ffffff;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 700;
+            color: #fff
+        }
+
+        .input {
+            color: #FDFEFE;
+        }
+    </style>
+</head>
+
+<body>
+    <!--header section start -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-start" href="#" style="  color: #ffc107;">مكتبتكو</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+
+                <div class="offcanvas-header">
+                    <img src="/images/logo (3).png" alt="photo" style="width: 100px;height: 100px;border-radius: 50%;">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">{{adminuser}}</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#" style="  color: #ffc107;">الصفحة
+                                الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/" style="  color: #ffc107;">تسجيل الخروج</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--banner section start -->
+    <div class="header_section_5" style="height: 180vh;">
+        <div style="margin-top:0%;" class="add">
+            <div>
+                <br><br><br><br>
+                <button style="position: relative; left: 90%; transform: translate(-50%);" type="button"
+                    class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                    قيد السماحية
+                </button>
+                <button style="position: relative; left: 40%; transform: translate(-50%);" type="button"
+                    class="btn btn-warning" data-toggle="modal" data-target="#exampleModal-3">
+                    تجديد الباقة
+                </button>
+                <button style="position: relative; left: -5%; transform: translate(-50%);" type="button"
+                    class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-2">
+                    السماحية
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h2" id="exampleModalLabel">عدم السماحية</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                {{!-- Form Model --}}
+                                <form action="admin/nopermissions" method="post">
+                                    <div class="mb-3 text-center h4">
+                                        <label for="permissions" class="form-label text-danger"> الرقم التعريفي</label>
+                                        <input type="text" name="permissions" class="form-control" id="permissions">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">ارسال</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel-2" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h2" id="exampleModalLabel-2"> السماحية</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                {{!-- Form Model --}}
+                                <form action="admin/permissions" method="post">
+                                    <div class="mb-3 text-center h4">
+                                        <label for="permissions" class="form-label text-danger"> الرقم التعريفي</label>
+                                        <input type="text" name="permissions" class="form-control" id="permissions">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">ارسال</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="exampleModal-3" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel-3" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title h2" id="exampleModalLabel-3"> تجديد الباقة</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                {{!-- Form Model --}}
+                                <form action="admin/cardprice" method="post">
+                                    <div class="mb-3 text-center h4">
+                                        <label for="permissions" class="form-label text-danger"> الرقم التعريفي</label>
+                                        <input type="text" name="idOfDay" class="form-control" id="idOfDay">
+                                        <label for="permissions" class="form-label text-danger"> نوع الباقة </label><br>
+                                        <input class="form-control" type="number" name="numberOfDays" id="numberOfDays">
+
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">ارسال</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="all p-3" style="height: 170vh;">
+            <div class="overscrol">
+                <table class="table table-bordered border-primary table-light ">
+                    <thead>
+                        <tr class="text-center table-dark">
+                            <th scope="col">الرقم التعريفي</th>
+                            <th scope="col">نوع المؤسسة</th>
+                            <th scope="col">المحافظة</th>
+                            <th scope="col">اسم المؤسسة</th>
+                            <th scope="col">رقم الهاتف</th>
+                            <th scope="col">البريد الالكتروني</th>
+                            <th scope="col">الرقم السري</th>
+                            <th scope="col"> تاريخ بدءالاشتراك</th>
+                            <th scope="col"> تاريخ نهايةالاشتراك</th>
+                            <th scope="col">مدة الاشتراك </th>
+                            <th scope="col">السماحية</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each allAdmin}}
+                        <tr>
+                            <td>{{this.id}}</td>
+                            <td>{{this.definthome}}</td>
+                            <td>{{this.governorate}}</td>
+                            <td>{{this.username}}</td>
+                            <td>{{this.phoneadmin}}</td>
+                            <td>{{this.email}}</td>
+                            <td>{{this.password}}</td>
+                            <td>{{this.dateregister}}</td>
+                            <td>{{this.subenddate}}</td>
+                            <td>{{this.subdata}}</td>
+                            {{#if this.permissions}}
+                            <td class="text-primary text-center">نشط</td>
+                            {{else}}
+                            <td class="text-danger text-center">غير نشط</td>
+                            {{/if}}
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <div class=" m-5 text-center">
+                    <h1 class=" p-2 btn btn-warning display-1"> الباقات </h1>
+                </div>
+                <div class="row m-5  ">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="header">
+                                <span class="title text-center text-warning">المكتبات</span>
+                            </div>
+                            <form action="admin/cardlib" method="post">
+                                <label for="oneMontlib" class="input text-warning">باقة
+                                    شهر</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="number" id="oneMontlib" name="oneMontlib">
+                                <label for="twoMontlib" class="input text-warning">باقة شهرين</label>&nbsp;
+                                <input type="number" id="twoMontlib" name="twoMontlib">
+                                <label for="threeMontlib" class="input text-warning">باقة 3 شهور</label>
+                                <input type="number" id="threeMontlib" name="threeMontlib">
+                                <div class="text-center m-2">
+                                    <button type="submit" class="btn btn-warning ">تعديل</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="header">
+                                <span class="title text-center text-warning">الاكاديميات</span>
+                            </div>
+                            <form action="admin/cardacd" method="post">
+                                <label for="oneMontAcd" class="input text-warning">باقة
+                                    شهر</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="number" id="oneMontAcd" name="oneMontAcd">
+                                <label for="twoMontAcd" class="input text-warning">باقة شهرين</label>&nbsp;
+                                <input type="number" id="twoMontAcd" name="twoMontAcd">
+                                <label for="threeMontAcd" class="input text-warning">باقة 3 شهور</label>
+                                <input type="number" id="threeMontAcd" name="threeMontAcd">
+                                <div class="text-center m-2">
+                                    <button type="submit" class="btn btn-warning ">تعديل</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="header">
+                                <span class="title text-center text-warning">متاجر كتب</span>
+                            </div>
+                            <form action="admin/cardbuy" method="post">
+                                <label for="oneMontlibBuy" class="input text-warning">باقة
+                                    شهر</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="number" id="oneMontlibBuy" name="oneMontlibBuy">
+                                <label for="twoMontlibBuy" class="input text-warning">باقة شهرين</label>&nbsp;
+                                <input type="number" id="twoMontlibBuy" name="twoMontlibBuy">
+                                <label for="threeMontlibBuy" class="input text-warning">باقة 3 شهور</label>
+                                <input type="number" id="threeMontlibBuy" name="threeMontlibBuy">
+                                <div class="text-center m-2">
+                                    <button type="submit" class="btn btn-warning ">تعديل</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- <div style="margin-top: 3rem;">
+                <div class=" m-5 text-center">
+                    <h1 class=" p-2 btn btn-warning display-1"> تعديل رقم الهاتف </h1>
+                </div>
+                <div class="row m-5">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <span class="title text-center text-warning">رقم التواصل</span>
+                            </div>
+                            <form action="" method="post" class="text-center">
+                                <input type="text" id="oneMontlib" name="oneMontlib">
+                                <div class="text-center m-2">
+                                    <button type="submit" class="btn btn-warning ">تعديل</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
+
+        </div>
+    </div>
+
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="text-center ">
+                <div style="padding: 30px;background-color: #FDFEFE;border-radius: 20px;"></div>
+            </div>
+            <div class="footer_section_2">
+                <div class="row">
+                    <div class="col-lg-3 margin_top">
+                        <div class="call_text"><a href="#"><img src="/images/call-icon1.png"><span
+                                    class="padding_left_15">Call Now
+                                    +201064214425</span></a></div>
+                        <div class="call_text"><a href="#"><img src="/images/mail-icon1.png"><span
+                                    class="padding_left_15">maktabtoko@gmail.com</span></a></div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="information_main">
+                            <h4 class="information_text">social media</h4>
+                            <p class="many_text">
+                                Facebook
+                                <br>
+                                Twitter
+                                <br>
+                                LinkedIn
+                                <br>
+                                Instgram
+                                <br>
+                                Youtube
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="information_main">
+                            <h4 class="information_text">Our Services</h4>
+                            <p class="many_text">
+                                Study office services
+                                <br>
+                                educational services
+                                <br>
+                                commercial services
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="information_main">
+                            <h4 class="information_text">Quick Linkes</h4>
+                            <p class="many_text">
+                                Home
+                                <br>
+                                Login
+                                <br>
+                                Register
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <p class="copyright_text">© 2024 All Rights Reserved. <a
+                    href="https://www.facebook.com/profile.php?id=100078522217484" target="_blank">CodeCome</a></p>
+        </div>
+    </div>
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+    {{!--
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script> --}}
+    {{!--
+    <script src="/javascripts/script.js"></script> --}}
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/popper.min.js"></script>
+    <script src="/javascripts/bootstrap.bundle.min.js"></script>
+    <script src="/javascripts/jquery-3.0.0.min.js"></script>
+    <script src="/javascripts/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/javascripts/custom.js"></script>
+    <!-- javascript -->
+    <script src="/javascripts/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
